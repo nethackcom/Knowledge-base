@@ -7,9 +7,8 @@ def BinarySeach(arr: list, value: int) -> int:
     mid = (first+last)//2
     if arr[mid] == value:
       index = mid
+      return index
+    if arr[mid] < value:
+      first = mid + 1
     else:
-      if arr[mid] < value:
-        first = mid + 1
-      elif arr[mid] > value:
-        last = mid - 1
-    return index
+      last = mid - 1
