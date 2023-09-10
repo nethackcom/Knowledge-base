@@ -1,4 +1,4 @@
-array = [6,8,9,2,5,1,4,7,3]
+any_array = [6,8,9,2,5,1,4,7,3]
 def BinarySeach(arr: list, value: int) -> int:
     arr = sorted(arr)
     first = 0
@@ -15,5 +15,5 @@ def BinarySeach(arr: list, value: int) -> int:
         else:
           last = mid - 1
 
-x = BinarySeach(array, 4)
-print(sorted(array)[x])
+x = BinarySeach(any_array, 4)
+print(sorted(any_array)[x])
